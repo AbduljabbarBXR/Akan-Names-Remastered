@@ -1,0 +1,62 @@
+.container > div {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    color: #ffffff;
+    
+    
+}
+
+html, body {
+    height: 100%;
+    
+}
+
+html {
+    display: table;
+    margin: auto;
+    width:100%;
+}
+
+body {
+    vertical-align: middle;
+    text-align:left; 
+    column-count: 1;
+    
+ 
+}    
+    
+.Paragraph {
+color: rgb(255, 255, 255);
+text-align: left;
+
+
+} 
+
+.headingmain {
+text-align: left;
+text-underline-position: below;
+
+
+} 
+.list {
+column-count: 2;
+column-rule-style: inset;
+
+} 
+
+.finder {
+
+color: rgb(236, 219, 161);
+
+}
+
+} 
+
+.foooter {
+
+color: rgb(158, 158, 141);
+
+}
+

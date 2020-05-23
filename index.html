@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
     <title>Akan Names</title>
-</head>
-<body>
-    <div><h1>Akan Names</h1>
-        <p>A web application that takes a user's birthday and calculates the day of the week they were born. Then depending on their gender outputs their Akan Name.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+ 
+</head> 
+<body class="background-image" style="background-image:url(images/ghana.jpg);"></body>
+<body><div class="body">
+	<div class="container">
+    
+    <div class="Heading1"> 
+        <h1 class="headingmain">Akan Names</h1>
+        <p class="Paragraph">A web application that takes a user's birthday and calculates the day of the week they were born. Then depending on their gender outputs their Akan Name.</p>
     </div>
     <div>
-        <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
+        <p class="Paragraph">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
     </div>
 
     
 
-    <p><u><strong>Here are some Ghanaian Names:</strong></u> </p>
-					<div>
-						<div>
-							<h4></i>&nbsp;&nbsp;Female</h4>
-							<ul>
+    <div><p><u><strong>Here are some Ghanaian Names:</strong></u> </p>
+					<div class="list">
+						
+						<u><h4></i>&nbsp;&nbsp;Female</h4></u>
+							  
 								<li>Sunday: Akosua</li>
 								<li>Monday: Adwoa</li>
 								<li>Tuesday: Abenaa</li>
@@ -27,11 +33,10 @@
 								<li>Thursday:  Yaa</li>
 								<li>Friday: Afua</li>
 								<li>Saturday: Ama</li>
-							</ul>
-						</div>
-						<div>
-							<h4>Male</h4>
-							<ul>
+							  
+					
+							<u><h4>Male</h4></u>
+							
 								<li>Sunday: Kwasi</li>
 								<li>Monday: Kwadwo</li>
 								<li>Tuesday: Kwabena</li>
@@ -39,15 +44,68 @@
 								<li>Thursday:  Yaw</li>
 								<li>Friday: Kofi</li>
 								<li>Saturday: Kwame</li>
-							</ul>
-						</div>
 					</div>
+		</div>
+
+<div class="form">
+
+		<div><h2><b>Akan Name Finder</b> </h2>
+		<h5><u>Select Birthday Below</u></h5>
+
+		<div>
+			<div class="container">
+			  <h2>Enter Details Here</h2>
+			  <form name="myForm" onsubmit="validate();">
+			</div>
+
+				<div>
+				  <label for="number">Year of Birth:</label>
+				  <input type="number" id="year" placeholder="Year Eg: born in 2020" name="year">
 				</div>
 
+				<div>
+				  <label for="month">Month of Birth:</label>
+				  <input type="number" id="month" placeholder="Month 1-12" name="month">
+				</div>
 
-    
+				<div>
+				  <label for="date">Date of Birth:</label>
+				  <input type="number" id="date" placeholder="Date 1-31 " name="date">
+				</div>
+
+				<div>
+				  <label for="month">Gender					  
+				  </label>
+				</div>
+
+				 
+				  <div>
+					<label>
+					  <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 					 
+					</label>
+				  </div>
+
+				  <div class="form-check-inline">
+					<label class="form-check-label">
+					  <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+					</label>					
+				  </div>
+
+				</div>
+				<button type="submit" onclick="findName();">Get Name</button>
+				</div>
+				
+				<br>
+			  </form>
+			  <p id="results"> </p>
+			</div>
+</div>  
+
+
+<div class="footer">
+	<footer> Akan Names by, AJ &copy; 2020 All Rights Reserved.</footer>
+</div>
+
+<script src="js/script.js"></script>
 </body>
-
-<footer> Akan Names by, AJ &copy; 2020 All Rights Reserved.</footer>
-
 </html>
